@@ -1,0 +1,11 @@
+pandas
+dask
+numpy
+matplotlib
+seaborn
+statannot
+statsmodels
+pybedtools
+scipy
+networkx
+python-louvain
