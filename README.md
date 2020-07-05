@@ -8,9 +8,6 @@ The analysis pipeline runs on Python 3+. Please install the dependencies by runn
 pip install -r requirements.txt
 ```
 
-## Downloading the data for the analysis
-
-
 ## Running the analysis code
 To reproduce the figures of the paper, run the following scripts from the root folder of this repository. The scripts have to be run in order. All the figures will be generated and put in the `figures/analysis` folder.
 

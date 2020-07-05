@@ -745,9 +745,9 @@ ctcfs.loc[(ctcfs.meth_score > -1) & (ctcfs.meth_score < 50), "meth_down"] = 1
 ctcfs['meth_up'] = 0
 ctcfs.loc[(ctcfs.meth_score > -1) & (ctcfs.meth_score >= 50), "meth_up"] = 1
 ctcfs['with_meth'] = 0
-ctcfs.loc[ctcfs.has_meth, 'with_meth'] = 1
+ctcfs.loc[ctcfs.has_meth == 'With probe', 'with_meth'] = 1
 ctcfs['without_meth'] = 0
-ctcfs.loc[~ctcfs.has_meth, 'without_meth'] = 1
+ctcfs.loc[ctcfs.has_meth == 'Without probe', 'without_meth'] = 1
 
 
 aggregations = {'ctcf_id': 'count', 
